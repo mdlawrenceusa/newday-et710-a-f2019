@@ -37,6 +37,27 @@
     <link rel="stylesheet" href="../css/content.css">
     <link rel="stylesheet" href="../css/footer.css">
 
+    <style>
+    body, html {
+      height: 100%;
+    }
+
+    .parallax {
+      /* The image used */
+      background-image: url('http://www.qcc.cuny.edu/commencement/images/student3.png');
+
+      /* Full height */
+      height: 100%;
+
+      /* Create the parallax scrolling effect */
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    </style>
+
+
   </head>
   <body>
 
@@ -84,7 +105,15 @@
 
 
     <!-- *Begin Content -->
+    <div class="parallax"></div>
 
+    <div style="height:1000px;background-color:red;font-size:36px">
+    Scroll Up and Down this page to see the parallax scrolling effect.
+    This div is just here to enable scrolling.
+    Tip: Try to remove the background-attachment property to remove the scrolling effect.
+    </div>
+
+    <div class="parallax"></div>
     <!-- *Begin AngularJS -->
     <div>
       <label>Name:</label>
